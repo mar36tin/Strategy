@@ -22,7 +22,12 @@ import vehicles.IDontFly;
  *
  */
 public class AirplaneTest {
+	private FlyingFactory flyingFactory;
 
+	@BeforeClass
+	public static void onlyOnce(){
+		flyingFactory = new FlyingFactory();
+	} 
 	@Test
 	public void test1() {
 				
